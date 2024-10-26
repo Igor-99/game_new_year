@@ -38,4 +38,7 @@ helloworld/
 │       │
 │       └── views
 │           ├── __init__.py
+│           ├── admin_screen.py
+│           ├── user_screen.py
+│           ├── tv_screen.py
 │           └── app.py
