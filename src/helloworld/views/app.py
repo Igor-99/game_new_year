@@ -25,7 +25,7 @@ class HelloWorld(toga.App):
             "Введите своё имя: ",
             style=Pack(padding=(0, 5)),
         )
-        self.name_input = toga.TextInput(style=Pack(flex=1), placeholder="Поле не должно быть пустым")
+        self.name_input = toga.TextInput(value = "test", style=Pack(flex=1), placeholder="Поле не должно быть пустым")
         name_box = toga.Box(style=Pack(direction=ROW, padding=5))
         name_box.add(name_label)
         name_box.add(self.name_input)

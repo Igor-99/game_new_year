@@ -7,7 +7,7 @@ class FirebaseApp:
     def __new__(cls):
         if cls._instance is None:
             # Инициализация приложения Firebase
-            cred = credentials.Certificate('D:/kivy-lessons/beeware/helloworld/src/helloworld/game-new-year-firebase.json')
+            cred = credentials.Certificate('D:/python_project/beeware/helloworld/src/helloworld/game-new-year-firebase.json')
             firebase_admin.initialize_app(cred, {'databaseURL': 'https://game-new-year-default-rtdb.firebaseio.com/'})
             cls._instance = super(FirebaseApp, cls).__new__(cls)
         return cls._instance
